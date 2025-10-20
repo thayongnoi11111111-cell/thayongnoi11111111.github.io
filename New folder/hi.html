@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chúc mừng 20/10</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff3f8;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(200,80,140,0.10);
+      text-align: center;
+      padding: 48px 36px 40px 36px;
+      max-width: 420px;
+      position: relative;
+      overflow: visible;
+    }
+    h1 {
+      color: #c2185b;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .flowers-top, .flowers-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .flowers-bottom { margin-top: 16px; margin-bottom: 0;}
+    .flower {
+      width: 48px;
+      height: 48px;
+      opacity: 0.93;
+      animation: flowerPop 1.2s;
+    }
+    @keyframes flowerPop {
+      0% {transform: scale(0.7) rotate(-10deg);}
+      80% {transform: scale(1.1) rotate(8deg);}
+      100% {transform: scale(1) rotate(0);}
+    }
+    .wish {
+      font-size: 1.13rem;
+      color: #6d245b;
+      margin: 16px 0 8px 0;
+    }
+    .poem {
+      color: #ad1457;
+      font-style: italic;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+    .signature {
+      color: #ad1457;
+      font-weight: bold;
+      margin-top: 18px;
+    }
+    .btn-back {
+      margin-top: 28px;
+      padding: 10px 24px;
+      font-size: 18px;
+      background: #ec407a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+      box-shadow: 0 2px 6px #f8bbd0;
+    }
+    .btn-back:hover {
+      background: #7b1fa2;
+    }
+    /* Hoa bay nhẹ nhàng */
+    .floating-flower {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0.6;
+      animation: floatFlower 8s linear infinite;
+    }
+    .floating-flower.f1 { left: -30px; top: 26%; animation-delay: 0s;}
+    .floating-flower.f2 { right: -38px; top: 8%; animation-delay: 3s;}
+    .floating-flower.f3 { left: -36px; bottom: 12%; animation-delay: 1.8s;}
+    .floating-flower.f4 { right: -30px; bottom: 18%; animation-delay: 5s;}
+    @keyframes floatFlower {
+      0% { transform: translateY(0) scale(1);}
+      60% { transform: translateY(-18px) scale(1.07);}
+      100% { transform: translateY(0) scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hoa bay quanh viền -->
+    <img class="floating-flower f1" src="c:\Users\ASUS\Pictures\ảnh hoa\sunflower-bouquet-clipart-bouquet-of-sunflowers-drawn-on-white-background_597373_wh860.png" width="58" alt="">
+    <img class="floating-flower f2" src="c:\Users\ASUS\Pictures\ảnh hoa\hoa1.png.jpg" width="52" alt="">
+    <img class="floating-flower f3" src="c:\Users\ASUS\Pictures\ảnh hoa\pngtree-cute-hand-drawn-tulip-cartoon-vector-png-image_11432294.png" width="46" alt="">
+    <img class="floating-flower f4" src="c:\Users\ASUS\Pictures\ảnh hoa\download.png" width="62" alt="">
+    <!-- Hoa trên đầu -->
+    <div class="flowers-top">
+      <img class="flower" src="c:\Users\ASUS\Pictures\ảnh hoa\lovepik-cartoon-red-rose-png-image_401569595_wh1200.png" alt="hoa">
+      <img class="flower" src="c:\Users\ASUS\Pictures\ảnh hoa\japanese-cherry-blossom-vector-sticker-cartoon_548190_wh860.png" alt="hoa">
+      <img class="flower" src="c:\Users\ASUS\Pictures\ảnh hoa\hoa1.png.jpg" alt="hoa">
+    </div>
+    <h1>Chúc mừng ngày Phụ nữ Việt Nam 20/10!</h1>
+    <div class="wish">
+      Chúc một nửa thế giới – những người phụ nữ Việt Nam – luôn vui vẻ, mạnh khỏe, xinh đẹp và ngập tràn hạnh phúc.<br>
+      Cảm ơn vì đã luôn là những bông hoa rực rỡ, là nguồn cảm hứng bất tận cho cuộc sống!
+    </div>
+    <div class="poem">
+      <b>
+        Chúc cho “phái đẹp” bao điều tốt lành,<br>
+        Như hoa rực rỡ, như nắng long lanh.<br>
+        Hạnh phúc ngập tràn, tim luôn ấm áp,<br>
+        Mỗi ngày 20/10 đều rạng ngời, an lành!
+      </b>
+    </div>
+    <div class="flowers-bottom">
+      <img class="flower" src="c:\Users\ASUS\Pictures\ảnh hoa\hoa1.png.jpg" alt="hoa">
+      <img class="flower" src="c:\Users\ASUS\Pictures\ảnh hoa\pngtree-cute-hand-drawn-tulip-cartoon-vector-png-image_11432294.png" alt="hoa">
+      <img class="flower" src="https://img.icons8.com/color/96/sunflower--v1.png" alt="hoa">
+    </div>
+    <div class="signature">
+      — Nguyễn Thanh Tùng —
+    </div>
+    <button class="btn-back" onclick="window.location.href='ty.html'">Quay về trang chủ</button>
+  </div>
+</body>
+</html>

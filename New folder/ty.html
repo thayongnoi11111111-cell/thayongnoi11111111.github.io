@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bấm vào đây</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .box {
+      background: #ffe4ee;
+      border-radius: 14px;
+      padding: 40px 44px 32px 44px;
+      box-shadow: 0 4px 18px rgba(200,80,140,0.08);
+      text-align: center;
+      position: relative;
+    }
+    .flower-corner {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      opacity: 0.75;
+    }
+    .flower-corner.fl1 { top: -24px; left: -24px; }
+    .flower-corner.fl2 { top: -24px; right: -24px; transform: rotate(25deg);}
+    .flower-corner.fl3 { bottom: -24px; left: -24px; transform: rotate(-15deg);}
+    .flower-corner.fl4 { bottom: -24px; right: -24px; }
+    button {
+      margin-top: 30px;
+      padding: 14px 36px;
+      font-size: 20px;
+      background: #ec407a;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px #f8bbd0;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ad1457;
+    }
+    h2 {
+      color: #ad1457;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img class="flower-corner fl1" src="c:\Users\ASUS\Pictures\ảnh hoa\pngtree-cartoon-pink-petals-spring-flowers-png-image_6144582.jpg" alt="hoa">
+    <img class="flower-corner fl2" src="c:\Users\ASUS\Pictures\ảnh hoa\pngtree-colored-flower-decoration-illustration-image_1393324.jpg" alt="hoa">
+    <img class="flower-corner fl3" src="c:\Users\ASUS\Pictures\ảnh hoa\pngtree-cute-hand-drawn-tulip-cartoon-vector-png-image_11432294.png" alt="hoa">
+    <img class="flower-corner fl4" src="https://img.icons8.com/color/96/sunflower--v1.png" alt="hoa">
+    <h2>Hãy bấm nút bên dưới để nhận một bất ngờ nhé! </h2>
+    <button onclick="window.location.href='hi.html'">Click Me</button>
+  </div>
+</body>
+</html>
